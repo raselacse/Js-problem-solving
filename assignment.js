@@ -14,7 +14,7 @@ function kilometerToMeter(kilometer){
 
 
 
-    
+
 
 function budgetCalculator(watch, phone, laptop){
     var watchPrice = watch*50;
@@ -42,7 +42,7 @@ function hotelCost(num){
         }
         else if(i>20){
             var third = (i-20)*50;
-        }
+       }
     }
     var total = first + second + third;
     if(total>0){
@@ -51,7 +51,7 @@ function hotelCost(num){
     //for error message
     return "sir " + num + " day it's not possible! Please tell me, How long have you been here?"
 }
-var cost = hotelCost(-1);
+var cost = hotelCost(30);
 console.log(cost);
 
 
