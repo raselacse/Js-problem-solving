@@ -1,4 +1,6 @@
-/**function kilometerToMeter(kilometer){
+//https://github.com/raselacse/Js-problem-solving
+
+function kilometerToMeter(kilometer){
     if(kilometer>=0){
         var meter = kilometer*1000;
         return meter;
@@ -8,11 +10,13 @@
     }
 }
     var result = kilometerToMeter(12);
-    console.log(result);*/
+    console.log(result);
 
 
 
-/**function budgetCalculator(watch, phone, laptop){
+    
+
+function budgetCalculator(watch, phone, laptop){
     var watchPrice = watch*50;
     var phonePrice = phone*100;
     var laptopPrice = laptop*500;
@@ -21,9 +25,13 @@
 }
 var items = {watch:4, phone:3, laptop:2};
 var result = budgetCalculator(items.watch, items.phone, items.laptop);
-console.log(result);*/
+console.log(result);
 
-/**function hotelCost(num){
+
+
+
+
+function hotelCost(num){
     var first = 0, second = 0, third = 0;
     for(var i=0; i<=num; i++){
         if(i<=10){
@@ -44,7 +52,10 @@ console.log(result);*/
     return "sir " + num + " day it's not possible! Please tell me, How long have you been here?"
 }
 var cost = hotelCost(-1);
-console.log(cost);*/
+console.log(cost);
+
+
+
 
 
 function megaFriend(name){
