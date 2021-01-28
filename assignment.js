@@ -36,9 +36,9 @@
 
 
 
-// function hotelCost(num){
+// function hotelCost(days){
 //     var first = 0, second = 0, third = 0;
-//     for(var i=0; i<=num; i++){
+//     for(var i=0; i<=days; i++){
 //         if(i<=10){
 //             var first = i*100;
 //         }
@@ -54,7 +54,7 @@
 //         return total;
 //     }
 //     //for error message
-//     return "sir " + num + " day it's not possible! Please tell me, How long have you been here?"
+//     return "sir " + days + " day it's not possible! Please tell me, How long have you been here?"
 // }
 // var cost = hotelCost(30);
 // console.log(cost);
@@ -63,14 +63,14 @@
 
 
 
-function megaFriend(name){
-    if(name == '' || name == ' '){
+function megaFriend(friendsName){
+    if(friendsName == '' || friendsName == ' '){
         return 'we can not find becasue it is empty string';
     }
     else{
         var large = '';
-        for(var i=0; i<name.length; i++){
-            var element = name[i];
+        for(var i=0; i<friendsName.length; i++){
+            var element = friendsName[i];
             if(element.length>large.length){
                 large = element;
             }
