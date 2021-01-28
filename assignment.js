@@ -39,14 +39,16 @@ function hotelCost(days){
     var firstTenDays = 0, secondTenDays = 0, afterTwentyDays = 0;
     
     if(days>0){
-        if(days<=10){
-            var firstTenDays = days*100;
-        }
-        if(days>10 && days<=20){
-            var firstTenDays = (days-10)*80;
-        }
-        if(days>20){
-            var firstTenDays = (days-20)*50;
+        for(var i=0; i<=days; i++){
+            if(i<=10){
+                var firstTenDays = i*100;
+            }
+            else if(i>10 && i<=20){
+                var secondTenDays = (i-10)*80;
+            }
+            else if(i>20){
+                var afterTwentyDays = (i-20)*50;
+            }
         }
         var totalCost = firstTenDays + secondTenDays + afterTwentyDays;
         return totalCost;
@@ -55,7 +57,7 @@ function hotelCost(days){
         return "sir " + days + " day it's not possible! Please tell me, How long have you been here?"
     }
 }
-var calculateHotelCost = hotelCost(2);
+var calculateHotelCost = hotelCost(21);
 console.log(calculateHotelCost);
 
 
